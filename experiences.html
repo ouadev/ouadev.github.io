@@ -1,0 +1,438 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" type="text/css" href="home.css" />
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+	<style>
+		.project-desc h3 {
+			margin: 0 0 12px 0;
+			font-size: 18px;
+			color: #1a1a1a;
+			font-weight: 600;
+		}
+
+		.project-desc table {
+			width: 100%;
+			margin: 20px 0;
+			border-collapse: collapse;
+			font-size: 14px;
+		}
+
+		.project-desc table th {
+			background-color: #f0f3f1;
+			padding: 12px 10px;
+			text-align: left;
+			font-weight: 600;
+			border-bottom: 2px solid #d0d5d0;
+			color: #333;
+		}
+
+		.project-desc table td {
+			padding: 10px;
+			border-bottom: 1px solid #e8ebe9;
+			color: #555;
+		}
+
+		.project-desc table tr:last-child td {
+			border-bottom: none;
+		}
+
+		.project-desc .additional-info {
+			margin: 0 0 50px 0;
+		}
+	</style>
+	<title>ouadev - homepage </title>
+</head>
+
+<body>
+	<div id="container">
+
+		<div id="menu">
+			<div id="links">
+				<a href="/">Home</a>
+				<a href="experiences.html" class="currentmenu">Experiences</a>
+				<a href="projects.html">Projects</a>
+				<a href="contact.html">Contact</a>
+			</div>
+
+		</div>
+
+		<div id="content">
+			<div id="leftcontent">
+				<img width="80" height="80" src="resources/logo-closeup.png" alt="ouadev logo" />
+				<div id="logo">ouadev</div>
+			</div>
+			<div id="longdesc">
+
+				<div class="project-desc">
+					<h3>Tirra: Encrypted Notebook Desktop Application - OUADEV</h3>
+					<p class="additional-info "><i>Paris - October 2025 - February 2026 - 6 months</i></p>
+
+					<table>
+						<tr>
+							<th>Field</th>
+							<th>Tools</th>
+							<th>Platform</th>
+						</tr>
+						<tr>
+							<td>Encryption, UI, Database</td>
+							<td>Rust, ICED GUI</td>
+							<td>Linux/Windows/MacOS</td>
+						</tr>
+					</table>
+
+					<p>
+						Design and development of a multi-platform desktop application to write encrypted notes written
+						in Rust.<br />
+						The application is powered by a SQLite database extension that performs on-the-fly encryption
+						and decryption of the database file.<br />
+					<ul>
+						<li><a href="https://github.com/ouadev/tirra" class="plink">Tirra</a>: Encrypted Notebook, a
+							multi-platform desktop application.</li>
+						<li><a href="https://github.com/ouadev/tirravfs" class="plink">tirra-vfs</a>: SQLite encryption
+							extension for Tirra</li>
+					</ul>
+					check projects section for more details.
+					</p>
+				</div>
+
+				<div class="project-desc">
+					<h3>Home automation contact sensor - NAMI</h3>
+					<p class="additional-info "><i>Paris - July 2024 - March 2025 - 9 months</i></p>
+
+					<table>
+						<tr>
+							<th>Field</th>
+							<th>Tools</th>
+							<th>Platform</th>
+						</tr>
+						<tr>
+							<td>Smart Home, WiFi sensing, IoT, CoAP, Thread</td>
+							<td>C, Python</td>
+							<td>FreeRTOS, Silabs EFR32, ESP32</td>
+						</tr>
+					</table>
+
+					<p>
+						<i>Embedded development of a connected contact sensor</i>.<br />
+						Nami contact sensor is a connected device that supplements a system of intrusion detection based
+						on WiFi sensing.
+					<ul>
+						<li>Optimization of power consumption. The device is a battery-powered device.</li>
+						<li>Connectivity state machine based on CoAP and Thread protocols</li>
+						<li>Application layer development to communicate with the backend WiFi-sensing systems</li>
+						<li>Other features: Watchdog, security</li>
+					</ul>
+					</p>
+				</div>
+
+				<div class="project-desc">
+					<h3>Energy Smart-metering - Sagemcom</h3>
+					<p class="additional-info "><i>Paris - September 2021 - August 2023 - 2 years</i></p>
+
+					<table>
+						<tr>
+							<th>Field</th>
+							<th>Tools</th>
+							<th>Platform</th>
+						</tr>
+						<tr>
+							<td>Remote energy smart metering. Battery-powered devices</td>
+							<td>C, Python</td>
+							<td>FreeRTOS on STM32, Quectel cellular modules</td>
+						</tr>
+					</table>
+
+					<p>
+					<ul>
+						<i>Embedded development on a connected smart meter</i>. <br />
+						Contributed to the design and development of the software components powering an industrial
+						gas meter. Work focused on the connectivity, the security aspects and OTA updates:
+						<ul>
+							<li>Application layer on top of MQTT</li>
+							<li>Design and implementation of mutual authentication TLS for MQTT</li>
+							<li>CMP: led efforts to embed certificate management in the device.</li>
+							<li>Design and implementation of OTA updates for the main CPU and the cellular modem</li>
+							<li>Key management for encrypting OTA files</li>
+							<li>Software module to estimate device consumption</li>
+							<li>Synchronized teams across three international sites.</li>
+						</ul>
+
+						At the end of this project, I led architectural efforts to define the new product line of gas
+						meters.
+						Work consisted of choosing the right STM32 module and tailoring FreeRTOS to the regulation
+						constraints.
+						<ul>
+							<li>Design and development of the ultrasonic sensor driver to satisfy periodic mandatory
+								measurements</li>
+							<li>Design a system with two separate firmwares communicating through a strictly defined
+								interface to isolate the legal operations of measurements from the application features
+							</li>
+							<li>Design and implementation of the LCD screen driver</li>
+						</ul>
+					</ul>
+					</p>
+				</div>
+
+				<div class="project-desc">
+					<h3>LoRaWAN PoC - Sagemcom</h3>
+					<p class="additional-info "><i>Paris - July 2021 - August 2021 - 2 months</i></p>
+
+					<table>
+						<tr>
+							<th>Field</th>
+							<th>Tools</th>
+							<th>Platform</th>
+						</tr>
+						<tr>
+							<td>Smart metering, IoT</td>
+							<td>C, UART, LoRaWAN stack</td>
+							<td>FreeRTOS on STM32</td>
+						</tr>
+					</table>
+
+					<p>
+						Development of hardware/software Proof-of-concept: Adding LoRaWAN connectivity to an existing
+						product.
+					<ul>
+						<li>Connect a UART LoRaWAN dongle to the main board</li>
+						<li>UART driver and application layer integration: transport of metering data via OMS</li>
+					</ul>
+					</p>
+				</div>
+
+				<div class="project-desc">
+					<h3>Embedded Linux Application Development - Sagemcom</h3>
+					<p class="additional-info "><i>Paris - January 2021 - June 2021 - 6 months</i></p>
+
+					<table>
+						<tr>
+							<th>Field</th>
+							<th>Tools</th>
+							<th>Platform</th>
+						</tr>
+						<tr>
+							<td>Remote monitoring of telecom base stations</td>
+							<td>C, C++, Bash, Python</td>
+							<td>Embedded Linux</td>
+						</tr>
+					</table>
+
+					<p>
+						Application development on an embedded Linux device used for remote monitoring and controlling
+						of resources in telecom base stations
+					<ul>
+						<li>Adaptation of the application layers for a new evolution of the hardware: new modem, new
+							sensors, ...</li>
+						<li>General maintenance work: bug fixing and new feature implementation</li>
+						<li>Support of TLS mutual authentication for all communication channels.</li>
+						<li>Leading the efforts of rolling security into deployed systems</li>
+						<li>Implementation of new protocols dedicated to energy inverters: Apex</li>
+						<li>Design and implementation of OTA updates: on the distribution level (Yocto) and the
+							application layer (C++)</li>
+					</ul>
+					</p>
+				</div>
+
+				<div class="project-desc">
+					<h3>Embedded Linux & energy monitoring - Sagemcom</h3>
+					<p class="additional-info "><i>Paris - July 2019 - December 2020 - 1 year 6 months</i></p>
+
+					<table>
+						<tr>
+							<th>Field</th>
+							<th>Tools</th>
+							<th>Platform</th>
+						</tr>
+						<tr>
+							<td>IoT, Smart Grid, Energy monitoring, PLC, Cellular communication</td>
+							<td>Yocto, C, C++, Bash, Python</td>
+							<td>Embedded Linux Yocto</td>
+						</tr>
+					</table>
+
+					<p>
+						Maintained two Embedded Linux distributions running on two different hardware platforms.<br />
+						A device to monitor an array of sensors and control actuators in remote telecom base stations,
+						the device communicates via 2G cellular networks.<br />
+						The other device is a gateway for a Smart Grid project to power remote villages with solar
+						energy, the device communicates with the power network via PLC, and with the backend via a
+						cellular
+						modem.
+					<ul>
+						<li>Adapt the Linux distro for new hardware evolution: kernel selection, Yocto version upgrade,
+							Device Tree</li>
+						<li>Integrate security updates from the kernel and other packages in response to security audits
+						</li>
+						<li>Design and implement OTA updates</li>
+						<li>Open source license compliance</li>
+						<li>Install new packages in the Linux distros needed by the application layers</li>
+					</ul>
+					</p>
+				</div>
+
+				<div class="project-desc">
+					<h3>Embedded Linux LoRaWAN Gateway - Sagemcom</h3>
+					<p class="additional-info "><i>Paris - April 2019 - June 2019 - 3 months</i></p>
+
+					<table>
+						<tr>
+							<th>Field</th>
+							<th>Tools</th>
+							<th>Platform</th>
+						</tr>
+						<tr>
+							<td>IoT, LoRa</td>
+							<td>C</td>
+							<td>Embedded Linux, STM32 FreeRTOS powered sensor</td>
+						</tr>
+					</table>
+
+					<p>
+						Embedded development on a LoRaWAN Gateway that runs on an Embedded Linux. Fixing communication
+						bugs.
+					</p>
+				</div>
+
+				<div class="project-desc">
+					<h3>Bluetooth distance estimation - Valeo</h3>
+					<p class="additional-info "><i>Paris - January 2019 - March 2019 - 3 months</i></p>
+
+					<table>
+						<tr>
+							<th>Field</th>
+							<th>Tools</th>
+							<th>Platform</th>
+						</tr>
+						<tr>
+							<td>Automotive technologies</td>
+							<td>C</td>
+							<td>FreeRTOS, BLE</td>
+						</tr>
+					</table>
+
+					<p>
+						Embedded development of features to be used by a research team to test algorithms to estimate
+						the distance of a phone from the car and control the doors accordingly.
+					</p>
+				</div>
+
+				<div class="project-desc">
+					<h3>Signal processing - ComThings</h3>
+					<p class="additional-info "><i>Nice - March 2018 - August 2018 - 6 months</i></p>
+
+					<table>
+						<tr>
+							<th>Field</th>
+							<th>Tools</th>
+							<th>Platform</th>
+						</tr>
+						<tr>
+							<td>Signal processing, RF</td>
+							<td>C</td>
+							<td>nRF (BLE) and TI CC1111 (RF analysis), Android, FreeRTOS</td>
+						</tr>
+					</table>
+
+					<p>
+						Embedded development on a portable RF analysis tool operating on the sub-1 GHz range.<br />
+					<ul>
+						<li>Write algorithms to extract information from the captured signal</li>
+						<li>Jamming detection on a specific range of frequencies</li>
+						<li>Security analysis of RF remote controllers</li>
+						<li>Add new features: development across Android, NDK, Bluetooth controller and RF controller
+						</li>
+					</ul>
+					</p>
+				</div>
+
+				<div class="project-desc">
+					<h3>Electronic payment software - HPS</h3>
+					<p class="additional-info "><i>Casablanca - March 2017 - August 2017 - 6 months</i></p>
+
+					<table>
+						<tr>
+							<th>Field</th>
+							<th>Tools</th>
+							<th>Platform</th>
+						</tr>
+						<tr>
+							<td>Electronic payment systems</td>
+							<td>C</td>
+							<td>Unix</td>
+						</tr>
+					</table>
+
+					<p>
+						Maintenance work on Unix systems that manage electronic payments for banks.
+					</p>
+				</div>
+
+				<div class="project-desc">
+					<h3>Retail backend software - HARMAN</h3>
+					<p class="additional-info "><i>Casablanca - September 2015 - October 2016 - 14 months</i></p>
+
+					<table>
+						<tr>
+							<th>Field</th>
+							<th>Tools</th>
+							<th>Platform</th>
+						</tr>
+						<tr>
+							<td>Retail</td>
+							<td>Pro*C, SQL, Java, JavaScript</td>
+							<td>Oracle, Linux, Web</td>
+						</tr>
+					</table>
+
+					<p>
+						Backend and front-end development for a new retail management software running as a web
+						application.
+					<ul>
+						<li>Develop new features: write SQL and Pro*C programs</li>
+						<li>Maintenance of in-house JavaScript framework similar to jQuery</li>
+					</ul>
+					</p>
+				</div>
+
+				<div class="project-desc">
+					<h3>Image processing software on Linux - MASciR</h3>
+					<p class="additional-info "><i>Rabat - January 2015 - May 2015 - 6 months</i></p>
+
+					<table>
+						<tr>
+							<th>Field</th>
+							<th>Tools</th>
+							<th>Platform</th>
+						</tr>
+						<tr>
+							<td>Image Processing, industrial inspection</td>
+							<td>C++, Qt</td>
+							<td>Linux</td>
+						</tr>
+					</table>
+
+					<p>
+						<i>Graduation Project</i><br />
+						Design a hardware, mechanical and software system to demonstrate visual
+						inspection technologies and algorithms for industrial clients.<br />
+						The system: A turning disc operated by a motor where products can be placed for visual defect
+						inspection, an industrial camera fixed above the disc, and a Linux
+						computer to run the demos. <br />
+					<ul>
+						<li>Specification of the mechanical design</li>
+						<li>Development of a demonstration application: C++, Qt on Linux</li>
+						<li>Software backend: dynamic loader of algorithms stored in Dynamic Libraries</li>
+						<li>Design of an API definition that each algorithm must follow</li>
+					</ul>
+					</p>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</body>
+
+</html>

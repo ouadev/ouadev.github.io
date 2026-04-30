@@ -1,0 +1,80 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" type="text/css" href="home.css" />
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+	<title>ouadev - homepage </title>
+</head>
+
+<body>
+	<div id="container">
+
+		<div id="menu">
+			<div id="links">
+				<a href="/">Home</a>
+				<a href="experiences.html">Experiences</a>
+				<a href="projects.html" class="currentmenu">Projects</a>
+				<a href="contact.html">Contact</a>
+			</div>
+
+		</div>
+
+		<div id="content">
+			<div id="leftcontent">
+				<img width="80" height="80" src="resources/logo-closeup.png" alt="ouadev logo" />
+				<div id="logo">ouadev</div>
+			</div>
+			<ul class="project">
+
+				<li><i><b><a href="https://github.com/ouadev/tirra" class="plink">Tirra</a></b></i> : Encrypted
+					Notebook written in Rust.
+				</li>
+				<p>
+					A multi-platform desktop application to write encrypted notes, written in Rust.<br />
+					Features:<br />
+				<ul>
+					<li>Browse, read, and edit text entries stored in an encrypted SQLite database</li>
+					<li>Open file format (SQLite)</li>
+					<li>On-the-fly encryption powered by the SQLite3 encryption extension tirravfs</li>
+
+				</ul>
+
+				</p>
+
+				<li><i><b><a href="https://github.com/ouadev/tirravfs" class="plink">tirra-vfs</a></b></i> :
+					on-the-fly encryption for SQLite, written in Rust.
+				</li>
+				<p>tirravfs is a SQLite3 extension implementing a VFS shim that brings on-the-fly encryption to
+					SQLite3 databases. Database files remain encrypted at rest, with pages decrypted on read and
+					re-encrypted on write.
+				</p>
+				<p>
+					This extension is used in the encrypted notebook project: Tirra
+				</p>
+
+
+				<li><i><b><a href="https://github.com/ouadev/tirrage" class="plink">tirrage</a></b></i> : file
+					encryption in Rust using Age protocol.
+
+				</li>
+				<p>A Rust implementation of the Age v1 file encryption format, supporting scrypt-based
+					passphrase encryption.
+				</p>
+
+
+				<li><i><b><a href="http://github.com/ouadev/proc_maps_parser" class="plink">proc/maps
+								parser</a></b></i> : </li>
+
+				<p>A lightweight library, written in C, to parse Linux's /proc/[pid]/maps file, which contains
+					the memory map
+					of a process</p>
+			</ul>
+		</div>
+
+
+	</div>
+</body>
+
+</html>

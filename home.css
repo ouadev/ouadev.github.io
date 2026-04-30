@@ -1,0 +1,117 @@
+#container {
+	width: 800px;
+	margin: 0 auto;
+	margin-top: 60px;
+	
+}
+
+#leftcontainer {
+	/*background-color: green;*/
+	width: 250px;
+	float: left;
+	padding: 0px;
+
+
+}
+
+#rightcontainer {
+	background-color: yellow;
+	margin-left: 275px;
+}
+
+#content {
+	margin-top: 40px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#menu {
+	display: inline-flex;
+	margin-left: 200px;
+}
+
+#logo {
+	color: #c64b49;
+	font-family: "Belanosima", sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 28px;
+	margin-right: 60px;
+}
+
+#content {
+	display: inline-flex;
+}
+
+#leftcontent {
+	margin-right: 50px;
+}
+
+
+#links {
+	padding-top: 10px;
+	font-size: 19px;
+}
+
+#links a {
+	padding-right: 8px;
+	padding-left: 8px;
+
+}
+
+
+a:link {
+	/*color: #84d60a;*/
+	text-decoration: none;
+}
+
+/* visited links   */
+a:hover {
+	color: black;
+}
+
+/* user hovers     */
+a:active {
+	color: #ccc
+}
+
+/* active links    */
+
+
+
+a.currentmenu:link,
+a.currentmenu:visited {
+	color: black;
+
+	/*text-decoration: underline;*/
+}
+
+
+a.plink:link,
+a.plink:visited {
+	text-decoration: underline;
+	color: black;
+}
+
+
+#menu a {
+	color: inherit;
+	text-decoration: none;
+	font: inherit;
+	cursor: pointer;
+}
+
+
+
+
+.project-desc {
+	background-color: #f8faf9;
+	margin-bottom: 24px;
+	padding: 24px;
+	border: 1px solid #8b8d8b;
+}
+
+.additional-info {
+
+	font-size: 15px;
+	font-style: italic;
+}
